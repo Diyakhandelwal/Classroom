@@ -14,6 +14,7 @@ An interactive college-student web application, which shows classes, schedules, 
 
 ### Set Up your Local Environment
 Fork <a href="https://github.com/Diyakhandelwal/Classroom">this<a> repository
+  
 Clone the project
 ```
 git clone https://github.com/Diyakhandelwal/Classroom
