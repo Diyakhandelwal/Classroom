@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1" charset="utf-8">
+  <title>Assignments</title>
+  <!-- <link rel="stylesheet" href="/css/confetti.css"> -->
+  <!-- <link rel="stylesheet" href="/css/styles.css"> -->
+  <link rel="stylesheet" href="/css/studentAssignment2.css">
+  <script src="https://kit.fontawesome.com/5a081488ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="tab">
+    <button class="tablinks hover-underline-animation " onclick="openTab(event, 'assigned')" style="display:block">Assigned</button>
+    <button class="tablinks hover-underline-animation" onclick="openTab(event, 'completed')">Completed</button>
+  </div>
+  <div class="tab-content " id="assigned">
+
+
+    <div class="outer-container">
+      <div class="fcontainer">
+        <div class="container-1">
+          <h4>Assignment1</h4>
+          <span>dueDate</span>
+          <div class="inner-container">
+            <span class="subject">subject</span>
+            <button type="button" class="button-in-fitem download-btn"><i class="fa-solid fa-download"></i> download file</button>
+          </div>
+        </div>
+        <div class="container-2">
+          <label for="inputTag1" class="inputTag"><i class="fa-solid fa-upload"></i> Browse file<input type="file" id="inputTag1"></label>
+
+          <!-- <button id="button" class="ready" onclick="clickButton();">
+            <div class="message submitMessage">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12.2">
+                <polyline stroke="currentColor" points="2,7.1 6.5,11.1 11,7.1 " />
+                <line stroke="currentColor" x1="6.5" y1="1.2" x2="6.5" y2="10.3" />
+              </svg> <span class="button-text">Turn In</span>
+            </div>
+
+            <div class="message loadingMessage">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+              </svg>
+            </div>
+
+            <div class="message successMessage">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+              </svg> <span class="button-text">Turned In</span>
+            </div>
+          </button> -->
+          <!-- <button type="submit" name="button" class="turn-in button-in-fitem">Turn In</button> -->
+        </div>
+      </div>
+      <div class="fcontainer">
+        <div class="container-1">
+          <h4>Assignment2</h4>
+          <span>dueDate</span>
+          <div class="inner-container">
+            <span class="subject">subject</span>
+            <button type="button" class="button-in-fitem"><i class="fa-solid fa-download"></i> download file</button>
+          </div>
+        </div>
+        <div class="container-2">
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-content " id="completed">
+    <div class="outer-container">
+      <div class="fcontainer">
+        <div class="container-1">
+          <h4>Assignment1</h4>
+          <span>dueDate</span>
+          <div class="inner-container">
+            <span class="subject">subject</span>
+            <button type="button" class="button-in-fitem download-btn"><i class="fa-solid fa-download"></i> download file</button>
+          </div>
+        </div>
+        <div class="container-2">
+          <label for="inputTag" class="inputTag"><i class="fa-solid fa-upload"></i> Browse file<input type="file" id="inputTag1"></label>
+          <button type="submit" name="button" class="turn-in button-in-fitem">Turn In</button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!-- <script src="/js/confetti.js" charset="utf-8"></script> -->
+  <script src="/js/studentAssignment.js" charset="utf-8"></script>
+</body>
+
+</html>
