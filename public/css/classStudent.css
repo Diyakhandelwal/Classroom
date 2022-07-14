@@ -1,0 +1,46 @@
+.feature-section{
+    padding: 2px;
+    margin: -5vh 2px 2px 0px;
+}
+.admin-features{
+    padding: 0 0 0 0;
+}
+
+.card {
+    margin: 0px 10px 10px 20px;
+    background-color: #82a79b;
+    z-index: 0;
+}
+
+.card-body {
+    margin: -5px;
+}
+
+.card-img-top{
+    height: 180px;
+    border: 25px solid white;
+    border-bottom: 5px solid white;
+}
+
+/* .row-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+/* .row-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+
+.btn{
+    font-size: 12px;
+}
+
+.btn:hover{
+    /* background-color: #267c81; */
+    background-color: rgb(196, 216, 222);
+    color: black;
+}
+
+

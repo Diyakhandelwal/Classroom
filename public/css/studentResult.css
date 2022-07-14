@@ -1,0 +1,10 @@
+.studentContainer{
+    background-color: rgb(239, 249, 249);
+    margin-top: 15px;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+    max-width: max-content;
+}

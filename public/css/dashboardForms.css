@@ -1,0 +1,18 @@
+.form-style {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .label-style {
+    max-width: 150px;
+  }
+  
+  .text-style {
+    width: 50%;
+  }
+  
+  .myDropDown {
+    height: 35px;
+    border-radius: 4px;
+  }

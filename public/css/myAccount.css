@@ -1,0 +1,176 @@
+/* body {
+
+  margin: 2rem;
+  padding: 2rem 0;
+}
+
+.form-row {
+  margin-bottom: 1rem;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+
+}
+
+.button{
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(98, 137, 142);
+  border: 1px black solid;
+  font-size: 1rem;
+  padding: 5px 30px 5px 30px;
+  margin: 15px 20px 0 -30px;
+}
+
+.button:hover {
+  background-color: #267c81;
+    transition: background-color 0.2s;
+}
+
+.form{
+  background-color: rgb(255, 255, 255);
+  margin-top: 7vh;
+  padding-left: 35px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+} */
+
+body {
+  background-color: #e7fafa;
+  font-family: " Poppins", sans-serif;
+  margin: 2rem;
+  padding: 2rem 0;
+}
+
+.containerz {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  height: 70vh;
+}
+
+.textCenter {
+  text-align: center;
+}
+
+.form{
+  background-color: rgb(255, 255, 255);
+  margin-top: 2vh;
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 50px;
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 0 9px 0 rgba(0, 0, 0, 0.3);
+} 
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 10%;
+
+}
+
+.password-container {
+  display: flex;
+  text-align: center;
+}
+
+form i {
+  position: relative;
+  margin-top: 20px;
+  margin-left: -30px;
+  cursor: pointer;
+}
+
+.check {
+  transition: border .5s;
+  border: 2px solid red;
+  outline: none;
+}
+
+.checked {
+  transition: border .5s;
+  border: 2px solid #50C878;
+
+  outline: none;
+}
+
+/* button {
+
+  background-color: rgb(98, 137, 142);
+  border: 0;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  color: #ffffff;
+  transition: background-color 0.2s;
+  font-size: 14px;
+  padding: 10px 25px;
+} */
+
+button{
+  margin-top: 20px;
+  text-align: center;
+  justify-content: center;
+  background-color: rgb(39, 119, 137);
+  color: white;
+  border: 1px black solid;
+  font-size: 1rem;
+  padding: 5px 30px 5px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+label {
+  font-size: 1;
+  opacity: 0.7;
+  text-align: left;
+  margin-right: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid rgb(0, 0, 0);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.rowss {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.columnz {
+  display: flex;
+}
+
+.leftz {
+  flex: 1;
+}
+
+.rightz {
+  flex: 2;
+}
+
+.sbmt-btn-div {
+  display: flex;
+  justify-content: center;
+}
