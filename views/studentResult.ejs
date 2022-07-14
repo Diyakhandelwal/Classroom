@@ -46,7 +46,7 @@
       <div class="header__toggle">
         <i class='bx bx-menu' id="header-toggle"></i>
       </div>
-      <div class="item2">Hi, Vaishnavi!</div>
+      <div class="item2">Hi,<%=student.profiles.name %>!</div>
       <div class="header__img">
         V
       </div>
@@ -118,15 +118,15 @@
     <div id="content-area" style="text-align:center; margin-top: 40px;">
       <section style="margin-top: 30px">
         <div class="studentContainer">
-          <p class="text-sm-start">Name : Student Name</p>
+          <p class="text-sm-start">Name : <%=student.profiles.name %></p>
           <p class="text-xl-start">
-            Scholar Number: <span id="enrolment_no">Scholar Number</span>
+            Scholar Number: <span id="enrolment_no"><%= student.profiles.username %></span>
           </p>
           <p class="text-xl-start">
-            Semester: <span id="sem">7</span>
+            Semester: <span id="sem"><%= student.profiles.sem %></span>
           </p>
           <p class="text-xl-start">
-            Branch : <span id="branch">Branch</span>
+            Branch : <span id="branch"><%= student.profiles.branch %></span>
           </p>
         </div>
         <br />
@@ -139,7 +139,7 @@
           <div class="btn-group" id="dropdown-sem">
             <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
               id="dropdown-button">
-              Sem - 1
+              Sem - <%= student.profiles.sem %>
             </button>
           </div>
         </div>
