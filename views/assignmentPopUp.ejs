@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta id="vp" name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    window.onload = function () {
+      if (screen.width < 450) {
+        var mvp = document.getElementById('vp');
+        mvp.setAttribute('content', 'user-scalable=no,width=450');
+      }
+    }
+  </script>
+  <title>Assignment Pop up</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/assignmentPopUp.css">
+  <script src="https://kit.fontawesome.com/5a081488ab.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <button id='open'>click me</button>
+  <div class="modal-container" id="modal_container">
+    <div class=modal>
+      <div class="heading" id="heading">
+        <h2>Assignments</h2>
+      </div>
+      <br>
+
+      <div>
+        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+
+          <div class="fcontainer">
+            <div class="fitem assignment-name">
+              <p>
+                assignments1
+              </p>
+            </div>
+            <div class="fitem in">
+              <label for="inputTag1"><i class="fa-solid fa-upload"></i> Browse File<input id="inputTag1"
+                  type="file"></label>
+            </div>
+            <div class="fitem in">
+              <label for="InputTag2">Turn In<input id="inputTag2" type="submit"></label>
+            </div>
+            <br>
+
+          </div>
+      </div>
+      <button id='close'>close</button>
+    </div>
+  </div>
+
+  <script src="/js/assignmentPopUp.js" charset="utf-8"></script>
+</body>
+
+</html>

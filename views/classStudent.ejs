@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta id="vp" name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+    window.onload = function () {
+      if (screen.width < 450) {
+        var mvp = document.getElementById('vp');
+        mvp.setAttribute('content', 'user-scalable=no,width=450');
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Sacramento&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/assignmentPopUp.css">
+  <script src="https://kit.fontawesome.com/5a081488ab.js" crossorigin="anonymous"></script>
+
+  <link href="/css/confetti.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/dashboardStudent.css">
+  <link rel="stylesheet" href="/css/classStudent.css">
+
+
+
+  <title>Class</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__container">
+
+      <a href="/" class="header__logo item1">MANAGEMENT</a>
+      <div class="header__toggle">
+        <i class='bx bx-menu' id="header-toggle"></i>
+      </div>
+      <div class="item2">Hi, Vaishnavi!</div>
+      <div class="header__img">
+        V
+      </div>
+    </div>
+  </header>
+  <div class="container">
+
+    <div class="nav" id="navbar">
+      <nav class="nav__container">
+        <div>
+          <a href="/" class="nav__link nav__logo">
+            <i class='bx bxs-disc nav__icon'></i>
+            <span class="nav__logo-name">Dashboard</span>
+          </a>
+
+          <div class="nav__list">
+            <a href="/" class="nav__link active">
+              <i class='bx bx-home nav__icon'></i>
+              <span class="nav__name">Home</span>
+            </a>
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Academics</h3>
+
+              <div class="nav__dropdown">
+                <a href="/classes" class="nav__link">
+                  <span class="nav__icon iconify" data-icon="mdi:bookshelf"></span>
+                  <span class="nav__name">Classes</span>
+                </a>
+              </div>
+
+              <a href="/schedule" class="nav__link">
+                <span class="iconify nav__icon" data-icon="simple-line-icons:calender"></span>
+                <span class="nav__name">Schedule</span>
+              </a>
+              <a href="/assignments" class="nav__link">
+                <i class='bx bx-task nav__icon'></i>
+                <span class="nav__name">Assignments</span>
+              </a>
+              <a href="/result" class="nav__link">
+                <i class='bx bx-bar-chart-square nav__icon'></i>
+                <span class="nav__name">Result</span>
+              </a>
+            </div>
+            <div class="nav__items">
+              <h3 class="nav__subtitle">Profile</h3>
+
+              <div class="nav__dropdown">
+                <a href="/account" class="nav__link">
+                  <i class='bx bx-user nav__icon'></i>
+                  <span class="nav__name">My Account</span>
+                </a>
+              </div>
+
+              <a href="/messages" class="nav__link">
+                <i class='bx bx-message-rounded nav__icon'></i>
+                <span class="nav__name">Messages</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="/login" class="nav__link nav__logout">
+          <i class='bx bx-log-out nav__icon'></i>
+          <span class="nav__name">Log Out</span>
+        </a>
+      </nav>
+    </div>
+
+    <div id="content-area" style="text-align:center;">
+      <div class="feature-section row">
+        <div class="admin-features col-md-12 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/class1.jpg" alt="image">
+            <h5 style="margin-bottom: 0px; line-height: 10px; margin-top: 20px;">(Faculty) EE 251</h5>
+            <div class="card-body">
+              <a href="/classes/students" class="btn btn-dark"><i class="fa-solid fa-users"></i> View Class</a>
+              <a class="btn btn-dark open"><i class="fa-solid fa-tasks"></i> Add
+                Tasks</a>
+            </div>
+          </div>
+        </div>
+        <div class="admin-features col-md-12 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/class2.jpg" alt="image">
+            <h5 style="margin-bottom: 0px; line-height: 10px; margin-top: 20px;">ECE 225</h5>
+            <div class="card-body">
+              <a class="btn btn-dark open"><i class="fa-solid fa-tasks"></i> View
+                Tasks</a>
+            </div>
+          </div>
+        </div>
+        <div class="admin-features col-md-12 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/class5.jpg" alt="image">
+            <h5 style="margin-bottom: 0px; line-height: 10px; margin-top: 20px;">CSE 332</h5>
+            <div class="card-body">
+              <a class="btn btn-dark open" id="result"><i class="fa-solid fa-tasks"></i> View
+                Tasks</a>
+            </div>
+          </div>
+        </div>
+        <div class="admin-features col-md-12 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/class4.png" alt="image">
+            <h5 style="margin-bottom: 0px; line-height: 10px; margin-top: 20px;">EE 423</h5>
+            <div class="card-body">
+              <a class="btn btn-dark open"><i class="fa-solid fa-tasks"></i> View
+                Tasks</a>
+            </div>
+          </div>
+        </div>
+        <div class="admin-features col-md-12 col-lg-4">
+          <div class="card" style="width: 18rem;">
+            <img class="card-img-top" src="/assets/class3.png" alt="image">
+            <h5 style="margin-bottom: 0px; line-height: 10px; margin-top: 20px;">ECE 330</h5>
+            <div class="card-body">
+              <a class="btn btn-dark open"><i class="fa-solid fa-tasks"></i> View
+                Tasks</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="modal-container" id="modal_container">
+    <div class=modalss>
+      <div class="heading" id="heading">
+        <h4>Assignments</h4>
+      </div>
+      <div class="fcontainer">
+        <div class="fitem assignment-name">
+          <p id="assignment_name">Assignment 1:</p>
+        </div>
+        <div class="fitem in">
+          <label for="inputTag1"><i class="fa-solid fa-upload"></i> Browse File<input id="inputTag1"
+              type="file"></label>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="fitem in">
+          <button id="button" class="ready" onclick="clickButton();">
+            <div class="message submitMessage">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 12.2">
+                <polyline stroke="currentColor" points="2,7.1 6.5,11.1 11,7.1 " />
+                <line stroke="currentColor" x1="6.5" y1="1.2" x2="6.5" y2="10.3" />
+              </svg> <span class="button-text">Turn In</span>
+            </div>
+
+            <div class="message loadingMessage">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19 17">
+                <circle class="loadingCircle" cx="2.2" cy="10" r="1.6" />
+                <circle class="loadingCircle" cx="9.5" cy="10" r="1.6" />
+                <circle class="loadingCircle" cx="16.8" cy="10" r="1.6" />
+              </svg>
+            </div>
+
+            <div class="message successMessage">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 11">
+                <polyline stroke="currentColor" points="1.4,5.8 5.1,9.5 11.6,2.1 " />
+              </svg> <span class="button-text">Turned In</span>
+            </div>
+          </button>
+        </div>
+      </div>
+
+      <label id='close'>Close</label>
+    </div>
+  </div>
+
+
+
+  <%- include('partials/footer'); -%>
+    <script type="text/javascript" src="/js/confetti.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/assignmentPopUp.js" charset="utf-8"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/contact_modal.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+    <script src="https://kit.fontawesome.com/2bcba4bb6a.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js"
+      integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

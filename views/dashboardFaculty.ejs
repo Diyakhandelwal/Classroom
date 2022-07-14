@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/dashboardStudent.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__container">
+
+            <a href="/" class="header__logo item1" style="text-decoration: none;">MANAGEMENT</a>
+            <div class="header__toggle">
+                <i class='bx bx-menu' id="header-toggle"></i>
+            </div>
+            <div class="item2">Hi, Faculty!</div>
+            <div class="header__img">
+                F
+            </div>
+        </div>
+    </header>
+    <div class="container">
+
+        <div class="nav" id="navbar">
+            <nav class="nav__container">
+                <div>
+                    <a href="/" class="nav__link nav__logo">
+                        <i class='bx bxs-disc nav__icon'></i>
+                        <span class="nav__logo-name">Dashboard</span>
+                    </a>
+
+                    <div class="nav__list">
+                        <a href="/" class="nav__link active">
+                            <i class='bx bx-home nav__icon'></i>
+                            <span class="nav__name">Home</span>
+                        </a>
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Academics</h3>
+
+                            <div class="nav__dropdown">
+                                <a href="/classes" class="nav__link">
+                                    <span class="nav__icon iconify" data-icon="mdi:bookshelf"></span>
+                                    <span class="nav__name">Classes</span>
+                                </a>
+                            </div>
+
+                            <a href="/schedule" class="nav__link">
+                                <span class="iconify nav__icon" data-icon="simple-line-icons:calender"></span>
+                                <span class="nav__name">Schedule</span>
+                            </a>
+                            <a href="/assignments" class="nav__link">
+                                <i class='bx bx-task nav__icon'></i>
+                                <span class="nav__name">Assignments</span>
+                            </a>
+                            <a href="/result" class="nav__link">
+                                <i class='bx bx-bar-chart-square nav__icon'></i>
+                                <span class="nav__name">Result</span>
+                            </a>
+                        </div>
+                        <div class="nav__items">
+                            <h3 class="nav__subtitle">Profile</h3>
+
+                            <div class="nav__dropdown">
+                                <a href="/account" class="nav__link">
+                                    <i class='bx bx-user nav__icon'></i>
+                                    <span class="nav__name">My Account</span>
+                                </a>
+                            </div>
+
+                            <a href="/messages" class="nav__link">
+                                <i class='bx bx-message-rounded nav__icon'></i>
+                                <span class="nav__name">Messages</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/login" class="nav__link nav__logout">
+                    <i class='bx bx-log-out nav__icon'></i>
+                    <span class="nav__name">Log Out</span>
+                </a>
+            </nav>
+        </div>
+
+        <div id="content-area" style="text-align:center; margin-top: 40px;">
+            <h2>Welcome back, Faculty!</h2>
+            <img src="/assets/welcome.png" class="image" alt="welcome image"/>
+            <div class="text">Manage schedule, classes, assignments, results and much more in this _________</div>
+        </div>
+    </div>
+    <style>
+        .footer{
+            line-height: 1.5vh;
+        }
+    </style>
+    <%- include('partials/footer'); -%>
+        <script src="/js/main.js"></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+        <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
+</body>
+
+</html>
