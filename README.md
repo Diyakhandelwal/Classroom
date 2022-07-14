@@ -1,5 +1,5 @@
 # ClassRoom
-An interactive college-student web application, which shows classes, schedules, student result portal, assignments and much more.
+An interactive student-teacher web application, which shows classes, schedules, student result portal, assignments and much more.
 
 ### Built with:
 <ul>
